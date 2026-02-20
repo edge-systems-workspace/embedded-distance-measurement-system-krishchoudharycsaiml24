@@ -51,3 +51,18 @@ void loop() {
     // Set TRIG LOW for 2 microseconds
     digitalWrite(TRIG_PIN, LOW);
     delayMicroseconds(2);
+// TODO 10:
+    // Send 10 microsecond pulse on TRIG
+    digitalWrite(TRIG_PIN, HIGH);
+    delayMicroseconds(10);
+    digitalWrite(TRIG_PIN, LOW);
+
+    // TODO 11:
+    // Measure pulse duration on ECHO using pulseIn()
+    duration = pulseIn(ECHO_PIN, HIGH);
+
+    // TODO 12:
+    // Calculate distance in cm
+    // Speed of sound = 343 m/s
+    // Distance = (duration * 0.0343) / 2
+    distance = (duration * 0.0343) / 2.0;
