@@ -38,3 +38,16 @@ void setup() {
     // TODO 7:
     // Configure ECHO as INPUT
     pinMode(ECHO_PIN, INPUT);
+
+// TODO 8:
+    // Print system initialization message
+    Serial.println("Ultrasonic Distance Measurement System Initialized");
+    Serial.println("Measuring distance...");
+}
+
+void loop() {
+
+    // TODO 9:
+    // Set TRIG LOW for 2 microseconds
+    digitalWrite(TRIG_PIN, LOW);
+    delayMicroseconds(2);
