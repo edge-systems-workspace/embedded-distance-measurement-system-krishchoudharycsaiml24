@@ -66,3 +66,13 @@ void loop() {
     // Speed of sound = 343 m/s
     // Distance = (duration * 0.0343) / 2
     distance = (duration * 0.0343) / 2.0;
+// TODO 13:
+    // Print calculated distance
+    Serial.print("Distance: ");
+    Serial.print(distance);
+    Serial.println(" cm");
+
+    // TODO 14:
+    // Add delay (500ms)
+    delay(500);
+}
